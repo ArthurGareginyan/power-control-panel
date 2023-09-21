@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    padding-bottom: 80px;
+    font-family: "FS Kim", "Georgia", "Serif";
+    font-feature-settings: "liga";
+    font-weight: 500;
+}
+
+.icon i {
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: rgba(0, 139, 139, 0.24); // darkcyan
+}
+
+.machine {
+    padding-bottom: 60px;
+}
+
+.machine button {
+    padding-right: 24px;
+}
+
+.machine button i {
+    padding-right: 10px;
+}
+
+.machine p {
+    padding-top: 20px;
+    font-weight: 200;
+}
+
+.machine .status-label {
+    //font-weight: bold;
+    color: green;
+}
+
+.machine .error-label {
+    font-weight: bold;
+    color: red;
+}
