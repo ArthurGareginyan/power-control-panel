@@ -6,17 +6,17 @@ body {
     background-color: #f5f5f5;
 }
 
+.icon i {
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: rgba(0, 139, 139, 0.24); // darkcyan
+}
+
 h1 {
     padding-bottom: 80px;
     font-family: "FS Kim", "Georgia", "Serif";
     font-feature-settings: "liga";
     font-weight: 500;
-}
-
-.icon i {
-    padding-bottom: 10px;
-    font-size: 60px;
-    color: rgba(0, 139, 139, 0.24); // darkcyan
 }
 
 .machine {
