@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             updateStatusMessage(`${error.message}`, 'error');
         }
     });
-    
+
     // Restart
     document.getElementById("power-restart").addEventListener("click", async function() {
         try {
@@ -43,13 +43,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Function to check the status and refresh the status message every 5 seconds
-    setInterval(async function() {
+    // Function to check the status
+    async function checkStatus() {
         try {
             const data = await fetchData('/api/power/status', 'GET');
             updateStatusMessage(`${data.status}`, 'status');
         } catch (error) {
             updateStatusMessage(`${error.message}`, 'error');
         }
-    }, 3000);
+    }
+
+    // Check the status when the page loads and refresh status every 5 seconds
+    checkStatus(); // Check the status initially when the page loads
+    setInterval(checkStatus, 3000); // Refresh status every 5 seconds
+
 });
