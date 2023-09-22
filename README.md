@@ -16,6 +16,24 @@ Managing a home server often requires SSHing into the machine to perform basic o
 - Secure API running on the home server
 - Simple and user-friendly web interface
 
+## Structure
+
+- `/server/`               : Folder containing files for the home server machine.
+  - `power_control_panel_api.py` : Python script for the API running on your home server.
+  - `power_control_panel_api.service` : Systemd service file for the API.
+  - `power_control_panel.sh` : Shell script for power control.
+
+- `/reverse_proxy/`        : Folder containing files related to Nginx reverse proxy.
+  - `nginx_config.txt`     : Nginx configuration file.
+  
+- `/www/`                  : Folder containing files for the web server machine.
+  - `index.html`           : Web page with buttons for power control.
+  - `scripts.js`           : JavaScript file for handling button clicks.
+  - `styles.css`           : Stylesheet for the web interface.
+  - `/assets/lib/`         : Folder containing third-party libraries.
+    - `fontawesome/`       : FontAwesome library files.
+    - `bootstrap/`         : Bootstrap library files.
+
 ## Installation
 
 1. **Clone the Repository**
@@ -36,15 +54,6 @@ Managing a home server often requires SSHing into the machine to perform basic o
 
     Open your web browser and navigate to the IP address where your web interface is hosted.
 
-
-## Files
-
-1. `power_control_panel_api.py` - Python script for the API running on your home server.
-2. `power_control_panel_api.service` - Systemd service file for the API.
-3. `power_control_panel.sh` - Shell script for power control.
-4. `nginx_config.txt` - Nginx configuration for the reverse proxy.
-5. `index.html` - Web page with buttons for power control.
-6. `scripts.js` - JavaScript file for handling button clicks.
 
 ## Contributing
 
