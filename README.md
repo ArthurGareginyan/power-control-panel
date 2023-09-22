@@ -4,11 +4,11 @@
 
 ## Description
 
-The Power Control Panel is a simple web interface that allows you to remotely power off or reboot your home server. Developed with Ubuntu Server 22.04 in mind, this project leverages a Python-based API, Nginx as a reverse proxy, and a minimalist HTML/JS interface for ease of use.
+The Power Control Panel is a simple web interface that allows you to remotely power off or reboot your home server. Developed with Ubuntu Server 22.04 in mind, this project utilizes a Python-based API, Nginx for reverse proxying, and a clean and minimalist HTML/JS interface for ease of use.
 
 ## Why This Project Exists
 
-Managing a home server often requires SSHing into the machine to perform basic operations like rebooting or shutting down. This project aims to simplify these tasks with a straightforward web interface.
+Managing a home server often requires SSHing into the machine to perform basic operations like rebooting or shutting down. This project aims to simplify these tasks by offering a straightforward web interface.
 
 ## Features
 
