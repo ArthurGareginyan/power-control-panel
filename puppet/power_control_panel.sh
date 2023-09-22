@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Argument for the action (poweroff or status)
+# Argument for the action (poweroff or restart or status)
 action="$1"
 
 if [ "$action" == "poweroff" ]; then
