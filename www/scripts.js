@@ -17,8 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Common function to update status message with styling
     function updateStatusMessage(message, type) {
-        let prefix = type === 'status' ? '<span class="status-label">status:</span> ' : '<span class="error-label">Error:</span> ';
-        document.getElementById("status-message").innerHTML = prefix + message;
+        let wrap_l = '<span class="' + type + '-label">';
+        let wrap_r = '</span>';
+        document.getElementById("status-message").innerHTML = type + ': ' + wrap_l + message + wrap_r;
     }
 
     // Power off

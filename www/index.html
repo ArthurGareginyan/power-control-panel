@@ -20,7 +20,7 @@
 
         <h1>Power Control Panel</h1>
 
-        <div class="machine">
+        <div class="block">
             <button id="power-off" class="btn btn-lg btn-primary btn-danger">
                 <i class="fa-solid fa-power-off"></i>
                 Power off
@@ -29,11 +29,28 @@
                 <i class="fa-solid fa-rotate-right"></i>
                 Restart
             </button>
-            <p>
+            <p id="status">
                 <i class="fa-brands fa-raspberry-pi fa-lg"></i>
-                <span id="status-message"></span>
+                <span id="status-message">status: <b>Checking...</b></span>
             </p>
         </div>
+
+        <!--
+        <div class="block">
+            <button id="power-off" class="btn btn-lg btn-primary btn-danger">
+                <i class="fa-solid fa-power-off"></i>
+                Power off
+            </button>
+            <button id="power-restart" class="btn btn-lg btn-primary">
+                <i class="fa-solid fa-rotate-right"></i>
+                Restart
+            </button>
+            <p class="status">
+                <i class="fa-solid fa-server"></i>
+                <span id="status-message">Checking...</span>
+            </p>
+        </div>
+        -->
 
     </div>
 

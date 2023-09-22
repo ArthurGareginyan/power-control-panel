@@ -19,29 +19,33 @@ h1 {
     font-weight: 500;
 }
 
-.machine {
+.block + .block {
     padding-bottom: 60px;
 }
 
-.machine button {
+.block button {
     padding-right: 24px;
 }
 
-.machine button i {
+.block button + button {
+    margin-left: 20px;
+}
+
+.block button i {
     padding-right: 10px;
 }
 
-.machine p {
-    padding-top: 20px;
-    font-weight: 200;
+.block #status {
+    margin-top: 40px;
+    font-weight: 100;
 }
 
-.machine .status-label {
-    //font-weight: bold;
+.block #status .status-label {
     color: green;
+    font-weight: 400;
 }
 
-.machine .error-label {
-    font-weight: bold;
+.block #status .error-label {
     color: red;
+    font-weight: 400;
 }
