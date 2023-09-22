@@ -29,14 +29,13 @@ Managing a home server often requires SSHing into the machine to perform basic o
     ```
 
 3. **Configure Nginx**
-    ```
+
     Include the provided nginx_config.txt in your Nginx configuration.
-    ```
 
 4. **Access the Web Interface**
-    ```
+
     Open your web browser and navigate to the IP address where your web interface is hosted.
-    ```
+
 
 ## Files
 
